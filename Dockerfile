@@ -7,7 +7,8 @@ RUN wget https://github.com/jwilder/dockerize/releases/download/$DOCKERIZE_VERSI
     && tar -C /usr/local/bin -xzvf dockerize-alpine-linux-amd64-$DOCKERIZE_VERSION.tar.gz \
     && rm dockerize-alpine-linux-amd64-$DOCKERIZE_VERSION.tar.gz
 
-RUN npm install -g @nestjs/cli@8.0.0
+# RUN npm install -g @nestjs/cli@8.0.0
+RUN yarn global add @nestjs/cli@8.0.0
 
 USER node
 
